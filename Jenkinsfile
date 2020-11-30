@@ -5,7 +5,7 @@ pipeline {
 	stages {
 		stage ('Checkout') {
 			steps {
-				git branch:'master', url: 'https://github.com/OWASP/Vulnerable-Web-Application.git'
+				git branch:'main', url: 'https://github.com/derektan1801/jenkins-phpunit-test.git'
 			}
 		}
 		stage('Code Quality Check via SonarQube') {
